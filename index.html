@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JuniorIQ - Primary Playground</title>
+    <!-- Include Fredoka Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app">
+      <!-- Header -->
+      <header class="app-header">
+        <h1>JuniorIQ</h1>
+        <div class="user-controls">
+          <button id="home-btn" class="btn btn-warning btn-sm">🏠 Home</button>
+          <button id="new-student-btn" class="btn btn-danger btn-sm">🔄 New Student</button>
+        </div>
+      </header>
+
+      <!-- Navigation -->
+      <nav id="top-nav" class="top-nav">
+        <button class="nav-tab active" data-tab="math">🔢 Math</button>
+        <button class="nav-tab" data-tab="letters">🔤 Letters</button>
+        <button class="nav-tab" data-tab="reading">📖 Reading</button>
+        <button class="nav-tab" data-tab="patterns">🧩 Patterns</button>
+        <button class="nav-tab" data-tab="science">🧬 Science</button>
+        <button class="nav-tab quiz-all" data-tab="quiz-all">⭐ Quiz All</button>
+      </nav>
+
+      <!-- Main Game Container -->
+      <main id="game-container" class="game-container">
+        <!-- Content will be injected here by main.js -->
+      </main>
+
+    </div>
+
+    <!-- Instruction Modal -->
+    <div id="instruction-modal" class="modal hidden">
+      <div class="modal-content">
+        <h2 id="modal-title">Welcome!</h2>
+        <p id="modal-instructions">Get ready to play and learn!</p>
+        <button id="start-game-btn" class="btn btn-primary">Let's Go!</button>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
